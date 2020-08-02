@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUDOKU</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
+</head>
+
+<!-- HEADER SECTION -->
+<header>
+    <h1>SUDOKU</h1>
+    <div id="setup-game">
+
+        <!-- DIFFICULTY SECTION -->
+        <div id="diff">
+            <h3>Choose Difficulty : </h3>
+            <label><input type="radio" name="diff" id="diff-1" value="easy" checked>Easy</label>
+            <label><input type="radio" name="diff" id="diff-2" value="medium">Medium</label>
+            <label><input type="radio" name="diff" id="diff-3" value="hard">Hard</label>
+        </div>
+
+        <!-- TIMER SECTION -->
+        <div id="time">
+            <h3>Timer : </h3>
+            <label><input type="radio" name="time" id="time-1" value="three" checked>3 min</label>
+            <label><input type="radio" name="time" id="time-2" value="five">5 min</label>
+            <label><input type="radio" name="time" id="time-3" value="ten">10 min</label>
+        </div>
+    </div>
+    <button id="start-btn">Create New Game</button>
+</header>
+
+<!-- BODY SECTION -->
+<body>
+
+    <!-- STATUS SECTION -->
+    <div id="stats">
+        <p id="timer"></p>
+        <p id="lives"></p>
+    </div>
+
+    <!-- GAME SECTION -->
+    <div id="game">
+        <div id="board"></div>
+        <div id="number-container" class="hidden">
+            <p id="one">1</p>
+            <p id="two">2</p>
+            <p id="three">3</p>
+            <p id="four">4</p>
+            <p id="five">5</p>
+            <p id="six">6</p>
+            <p id="seven">7</p>
+            <p id="eight">8</p>
+            <p id="nine">9</p>
+        </div>
+    </div>
+    
+</body>
+
+<!-- FOOTER SECTION -->
+<footer>
+    <p>Created By Ghalib Sasmito 2020</p>
+</footer>
+
+</html>
